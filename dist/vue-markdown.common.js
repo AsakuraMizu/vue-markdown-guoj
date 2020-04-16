@@ -1,5 +1,5 @@
 /**
- * vue-markdown v2.2.4
+ * vue-markdown v1.0.0
  * https://github.com/miaolz123/vue-markdown
  * MIT License
  */
@@ -250,6 +250,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      default: function _default(htmlData) {
 	        return htmlData;
 	      }
+	    },
+	    addtionMarkdownModules: {
+	      type: Array,
+	      default: []
 	    }
 	  },
 
@@ -263,6 +267,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var _this = this;
 
 	    this.md = new _markdownIt2.default().use(_markdownItSub2.default).use(_markdownItSup2.default).use(_markdownItFootnote2.default).use(_markdownItDeflist2.default).use(_markdownItAbbr2.default).use(_markdownItIns2.default).use(_markdownItMark2.default).use(_markdownItKatex2.default, { "throwOnError": false, "errorColor": " #cc0000" }).use(_markdownItTaskLists2.default, { enabled: this.taskLists });
+
+	    for (i in this.addtionMarkdownModules) {
+	      this.md = this.md.use(i.module, i.options);
+	    }
 
 	    if (this.emoji) {
 	      this.md.use(_markdownItEmoji2.default);
