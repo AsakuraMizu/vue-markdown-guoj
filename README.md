@@ -1,10 +1,9 @@
-# vue-markdown
+# vue-markdown-guoj
 
-[![npm](https://img.shields.io/npm/v/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
-[![npm](https://img.shields.io/npm/l/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
-[![npm](https://img.shields.io/npm/dt/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
+[![npm](https://img.shields.io/npm/v/vue-markdown-guoj.svg?style=flat)](https://www.npmjs.com/package/vue-markdown-guoj)
+[![npm](https://img.shields.io/npm/l/vue-markdown-guoj.svg?style=flat)](https://www.npmjs.com/package/vue-markdown-guoj)
+[![npm](https://img.shields.io/npm/dt/vue-markdown-guoj.svg?style=flat)](https://www.npmjs.com/package/vue-markdown-guoj)
 
-> If you want vue-markdown for `vue1.X.X`, please checkout [vue-markdown1.X.X](https://github.com/miaolz123/vue-markdown/tree/v1).
 
 A Powerful and Highspeed Markdown Parser for Vue.
 
@@ -168,4 +167,4 @@ TIP: The default slot only renders **once** at the beginning, and it will overwr
 
 # License
 
-Copyright (c) 2016 [miaolz123](https://github.com/miaolz123) by [MIT](https://opensource.org/licenses/MIT)
+Copyright (c) 2020 [GuOJ Team](https://github.com/guoj-dev) by [MIT](https://opensource.org/licenses/MIT)
