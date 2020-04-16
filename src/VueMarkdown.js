@@ -128,6 +128,10 @@ export default {
     postrender: {
       type: Function,
       default: (htmlData) => { return htmlData }
+    },
+    addtionMarkdownModules: {
+      type: Array,
+      default: []
     }
   },
 
@@ -148,6 +152,10 @@ export default {
       .use(mark)
       .use(katex, { "throwOnError": false, "errorColor": " #cc0000" })
       .use(tasklists, { enabled: this.taskLists })
+    
+    for(i in this.addtionMarkdownModules) {
+      this.md = this.md.use(i.module,i.options)
+    }
 
     if (this.emoji) {
       this.md.use(emoji)
