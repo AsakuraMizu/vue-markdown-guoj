@@ -61,19 +61,19 @@ Supported Markdown Syntax:
 ### NPM
 
 ```shell
-$ npm install --save vue-markdown
+$ npm install --save vue-markdown-guoj
 ```
 
 ### Yarn
 
 ```shell
-$ yarn add vue-markdown --save
+$ yarn add vue-markdown-guoj --save
 ```
 
 ## CommonJS
 
 ```js
-var VueMarkdown = require('vue-markdown');
+var VueMarkdown = require('vue-markdown-guoj');
 
 new Vue({
   components: {
@@ -87,7 +87,7 @@ new Vue({
 After installing via Yarn or NPM, use the following snippet in the script portion of the Vue component which you wish to render the Markdown.
 
 ```js
-import VueMarkdown from 'vue-markdown'
+import VueMarkdown from 'vue-markdown-guoj'
 
 new Vue({
   components: {
@@ -151,6 +151,7 @@ TIP: The default slot only renders **once** at the beginning, and it will overwr
 - [markdown-it](https://github.com/markdown-it/markdown-it)
 - [transtone](https://github.com/transtone)
 - [**brandonferens**](https://github.com/brandonferens)
+- [vue-markdown-guoj](https://github.com/miaolz123/vue-markdown)
 
 # Contributions
 
@@ -164,6 +165,7 @@ TIP: The default slot only renders **once** at the beginning, and it will overwr
 - [killix](https://github.com/killix)
 - [LeFnord](https://github.com/lefnord)
 - [FlorianWendelborn](https://github.com/FlorianWendelborn)
+- [Quank123Wip](https://github.com/quank123wip)
 
 # License
 
