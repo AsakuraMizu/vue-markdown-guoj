@@ -8,8 +8,16 @@ import abbreviation from 'markdown-it-abbr'
 import insert from 'markdown-it-ins'
 import mark from 'markdown-it-mark'
 import toc from 'markdown-it-toc-and-anchor'
-import katex from 'markdown-it-katex'
 import tasklists from 'markdown-it-task-lists'
+
+const mathjax = require('mathjax-full/js/mathjax.js').mathjax;
+const TeX = require('mathjax-full/js/input/tex.js').TeX;
+const CHTML = require('mathjax-full/js/output/chtml.js').CHTML;
+const liteAdaptor = require('mathjax-full/js/adaptors/liteAdaptor.js').liteAdaptor;
+const RegisterHTMLHandler = require('mathjax-full/js/handlers/html.js').RegisterHTMLHandler;
+
+const AllPackages = require('mathjax-full/js/input/tex/AllPackages.js').AllPackages;
+
 
 export default {
   md: new markdownIt(),
@@ -150,7 +158,6 @@ export default {
       .use(abbreviation)
       .use(insert)
       .use(mark)
-      .use(katex, { "throwOnError": false, "errorColor": " #cc0000" })
       .use(tasklists, { enabled: this.taskLists })
     
     for(i in this.addtionMarkdownModules) {
