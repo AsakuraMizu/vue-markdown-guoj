@@ -189,6 +189,7 @@ export default {
       .use(graphviz)
       .use(mermaid)
       .use(flowchart)
+      .use(require('markdown-it-container'))
       .use(require("markdown-it-mathjax")());
 
     for (i in this.addtionMarkdownModules) {
