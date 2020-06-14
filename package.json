@@ -1,6 +1,6 @@
 {
   "name": "vue-markdown-guoj",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Powerful and Highspeed Markdown Parser for Vue. Forked by GuOJ",
   "main": "dist/vue-markdown.common.js",
   "files": [
