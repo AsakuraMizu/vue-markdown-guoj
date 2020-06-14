@@ -9,14 +9,31 @@ import insert from 'markdown-it-ins'
 import mark from 'markdown-it-mark'
 import toc from 'markdown-it-toc-and-anchor'
 import tasklists from 'markdown-it-task-lists'
+import markdownmathjax from 'markdown-it-mathjax'
 
-const mathjax = require('mathjax-full/js/mathjax.js').mathjax;
-const TeX = require('mathjax-full/js/input/tex.js').TeX;
-const CHTML = require('mathjax-full/js/output/chtml.js').CHTML;
-const liteAdaptor = require('mathjax-full/js/adaptors/liteAdaptor.js').liteAdaptor;
-const RegisterHTMLHandler = require('mathjax-full/js/handlers/html.js').RegisterHTMLHandler;
-
+const MathJax = require('mathjax-full/js/mathjax.js').mathjax
+import { TeX } from 'mathjax-full/js/input/tex.js'
+import { SVG } from 'mathjax-full/js/output/svg.js'
+import { LiteAdaptor } from 'mathjax-full/js/adaptors/liteAdaptor.js'
+import { RegisterHTMLHandler } from 'mathjax-full/js/handlers/html.js'
 const AllPackages = require('mathjax-full/js/input/tex/AllPackages.js').AllPackages;
+let liteAdaptor = new LiteAdaptor({ fontSize: 14 })
+RegisterHTMLHandler(liteAdaptor)
+function renderMathjax(src, options) {
+  let doc = liteAdaptor.parse(src)
+  const html = MathJax.document(doc, {
+    InputJax: new TeX({
+      inlineMath: options.inlineMath || [ ['\\(', '\\)'] ],
+      displayMath: options.displayMath || [ ['\\[', '\\]' ] ],
+      processEscapes: true,
+      maxBuffer: 5 * 1024,
+      packages: AllPackages
+    }),
+    OutputJax: new SVG()
+  })
+  html.render()
+  return liteAdaptor.innerHTML(liteAdaptor.body(html.document))
+}
 
 
 export default {
@@ -159,6 +176,7 @@ export default {
       .use(insert)
       .use(mark)
       .use(tasklists, { enabled: this.taskLists })
+      .use(markdownmathjax)
     
     for(i in this.addtionMarkdownModules) {
       this.md = this.md.use(i.module,i.options)
@@ -221,7 +239,8 @@ export default {
       this.md.render(
         this.prerender(this.sourceData)
       ) : ''
-    outHtml = this.postrender(outHtml);
+    outHtml = renderMathjax(outHtml)
+    outHtml = this.postrender(outHtml)
 
     this.$emit('rendered', outHtml)
     return createElement(
