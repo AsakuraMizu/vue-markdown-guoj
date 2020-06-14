@@ -6,13 +6,13 @@
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("babel-runtime/core-js/get-iterator"), require("babel-runtime/core-js/object/keys"), require("markdown-it"), require("markdown-it-emoji"), require("markdown-it-sub"), require("markdown-it-sup"), require("markdown-it-footnote"), require("markdown-it-deflist"), require("markdown-it-abbr"), require("markdown-it-ins"), require("markdown-it-mark"), require("markdown-it-toc-and-anchor"), require("markdown-it-task-lists"), require("markdown-it-mathjax"), require("mathjax-full/js/input/tex.js"), require("mathjax-full/js/output/svg.js"), require("mathjax-full/js/adaptors/liteAdaptor.js"), require("mathjax-full/js/handlers/html.js"), require("mathjax-full/js/mathjax.js"), require("mathjax-full/js/input/tex/AllPackages.js"));
+		module.exports = factory(require("babel-runtime/core-js/get-iterator"), require("babel-runtime/core-js/object/keys"), require("markdown-it"), require("markdown-it-emoji"), require("markdown-it-sub"), require("markdown-it-sup"), require("markdown-it-footnote"), require("markdown-it-deflist"), require("markdown-it-abbr"), require("markdown-it-ins"), require("markdown-it-mark"), require("markdown-it-toc-and-anchor"), require("markdown-it-task-lists"), require("mathjax-full/js/input/tex.js"), require("mathjax-full/js/output/svg.js"), require("mathjax-full/js/adaptors/liteAdaptor.js"), require("mathjax-full/js/handlers/html.js"), require("mathjax-full/js/mathjax.js"), require("mathjax-full/js/input/tex/AllPackages.js"), require("markdown-it-mathjax"));
 	else if(typeof define === 'function' && define.amd)
-		define(["babel-runtime/core-js/get-iterator", "babel-runtime/core-js/object/keys", "markdown-it", "markdown-it-emoji", "markdown-it-sub", "markdown-it-sup", "markdown-it-footnote", "markdown-it-deflist", "markdown-it-abbr", "markdown-it-ins", "markdown-it-mark", "markdown-it-toc-and-anchor", "markdown-it-task-lists", "markdown-it-mathjax", "mathjax-full/js/input/tex.js", "mathjax-full/js/output/svg.js", "mathjax-full/js/adaptors/liteAdaptor.js", "mathjax-full/js/handlers/html.js", "mathjax-full/js/mathjax.js", "mathjax-full/js/input/tex/AllPackages.js"], factory);
+		define(["babel-runtime/core-js/get-iterator", "babel-runtime/core-js/object/keys", "markdown-it", "markdown-it-emoji", "markdown-it-sub", "markdown-it-sup", "markdown-it-footnote", "markdown-it-deflist", "markdown-it-abbr", "markdown-it-ins", "markdown-it-mark", "markdown-it-toc-and-anchor", "markdown-it-task-lists", "mathjax-full/js/input/tex.js", "mathjax-full/js/output/svg.js", "mathjax-full/js/adaptors/liteAdaptor.js", "mathjax-full/js/handlers/html.js", "mathjax-full/js/mathjax.js", "mathjax-full/js/input/tex/AllPackages.js", "markdown-it-mathjax"], factory);
 	else if(typeof exports === 'object')
-		exports["VueMarkdown"] = factory(require("babel-runtime/core-js/get-iterator"), require("babel-runtime/core-js/object/keys"), require("markdown-it"), require("markdown-it-emoji"), require("markdown-it-sub"), require("markdown-it-sup"), require("markdown-it-footnote"), require("markdown-it-deflist"), require("markdown-it-abbr"), require("markdown-it-ins"), require("markdown-it-mark"), require("markdown-it-toc-and-anchor"), require("markdown-it-task-lists"), require("markdown-it-mathjax"), require("mathjax-full/js/input/tex.js"), require("mathjax-full/js/output/svg.js"), require("mathjax-full/js/adaptors/liteAdaptor.js"), require("mathjax-full/js/handlers/html.js"), require("mathjax-full/js/mathjax.js"), require("mathjax-full/js/input/tex/AllPackages.js"));
+		exports["VueMarkdown"] = factory(require("babel-runtime/core-js/get-iterator"), require("babel-runtime/core-js/object/keys"), require("markdown-it"), require("markdown-it-emoji"), require("markdown-it-sub"), require("markdown-it-sup"), require("markdown-it-footnote"), require("markdown-it-deflist"), require("markdown-it-abbr"), require("markdown-it-ins"), require("markdown-it-mark"), require("markdown-it-toc-and-anchor"), require("markdown-it-task-lists"), require("mathjax-full/js/input/tex.js"), require("mathjax-full/js/output/svg.js"), require("mathjax-full/js/adaptors/liteAdaptor.js"), require("mathjax-full/js/handlers/html.js"), require("mathjax-full/js/mathjax.js"), require("mathjax-full/js/input/tex/AllPackages.js"), require("markdown-it-mathjax"));
 	else
-		root["VueMarkdown"] = factory(root["babel-runtime/core-js/get-iterator"], root["babel-runtime/core-js/object/keys"], root["markdown-it"], root["markdown-it-emoji"], root["markdown-it-sub"], root["markdown-it-sup"], root["markdown-it-footnote"], root["markdown-it-deflist"], root["markdown-it-abbr"], root["markdown-it-ins"], root["markdown-it-mark"], root["markdown-it-toc-and-anchor"], root["markdown-it-task-lists"], root["markdown-it-mathjax"], root["mathjax-full/js/input/tex.js"], root["mathjax-full/js/output/svg.js"], root["mathjax-full/js/adaptors/liteAdaptor.js"], root["mathjax-full/js/handlers/html.js"], root["mathjax-full/js/mathjax.js"], root["mathjax-full/js/input/tex/AllPackages.js"]);
+		root["VueMarkdown"] = factory(root["babel-runtime/core-js/get-iterator"], root["babel-runtime/core-js/object/keys"], root["markdown-it"], root["markdown-it-emoji"], root["markdown-it-sub"], root["markdown-it-sup"], root["markdown-it-footnote"], root["markdown-it-deflist"], root["markdown-it-abbr"], root["markdown-it-ins"], root["markdown-it-mark"], root["markdown-it-toc-and-anchor"], root["markdown-it-task-lists"], root["mathjax-full/js/input/tex.js"], root["mathjax-full/js/output/svg.js"], root["mathjax-full/js/adaptors/liteAdaptor.js"], root["mathjax-full/js/handlers/html.js"], root["mathjax-full/js/mathjax.js"], root["mathjax-full/js/input/tex/AllPackages.js"], root["markdown-it-mathjax"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_6__, __WEBPACK_EXTERNAL_MODULE_7__, __WEBPACK_EXTERNAL_MODULE_8__, __WEBPACK_EXTERNAL_MODULE_9__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_11__, __WEBPACK_EXTERNAL_MODULE_12__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_14__, __WEBPACK_EXTERNAL_MODULE_15__, __WEBPACK_EXTERNAL_MODULE_16__, __WEBPACK_EXTERNAL_MODULE_17__, __WEBPACK_EXTERNAL_MODULE_18__, __WEBPACK_EXTERNAL_MODULE_19__, __WEBPACK_EXTERNAL_MODULE_20__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -63,7 +63,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	var _getIterator2 = __webpack_require__(1);
@@ -118,296 +118,292 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _markdownItTaskLists2 = _interopRequireDefault(_markdownItTaskLists);
 
-	var _markdownItMathjax = __webpack_require__(14);
+	var _tex = __webpack_require__(14);
 
-	var _markdownItMathjax2 = _interopRequireDefault(_markdownItMathjax);
+	var _svg = __webpack_require__(15);
 
-	var _tex = __webpack_require__(15);
+	var _liteAdaptor = __webpack_require__(16);
 
-	var _svg = __webpack_require__(16);
-
-	var _liteAdaptor = __webpack_require__(17);
-
-	var _html = __webpack_require__(18);
+	var _html = __webpack_require__(17);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var MathJax = __webpack_require__(19).mathjax;
+	var MathJax = __webpack_require__(18).mathjax;
 
-	var AllPackages = __webpack_require__(20).AllPackages;
+	var AllPackages = __webpack_require__(19).AllPackages;
 	var liteAdaptor = new _liteAdaptor.LiteAdaptor({ fontSize: 14 });
 	(0, _html.RegisterHTMLHandler)(liteAdaptor);
 	function renderMathjax(src, options) {
-	  var doc = liteAdaptor.parse(src);
-	  var html = MathJax.document(doc, {
-	    InputJax: new _tex.TeX({
-	      inlineMath: options.inlineMath || [['\\(', '\\)']],
-	      displayMath: options.displayMath || [['\\[', '\\]']],
-	      processEscapes: true,
-	      maxBuffer: 5 * 1024,
-	      packages: AllPackages
-	    }),
-	    OutputJax: new _svg.SVG()
-	  });
-	  html.render();
-	  return liteAdaptor.innerHTML(liteAdaptor.body(html.document));
+	    var doc = liteAdaptor.parse(src);
+	    var html = MathJax.document(doc, {
+	        InputJax: new _tex.TeX({
+	            inlineMath: [['\\(', '\\)']],
+	            displayMath: [['\\[', '\\]']],
+	            processEscapes: true,
+	            maxBuffer: 5 * 1024,
+	            packages: AllPackages
+	        }),
+	        OutputJax: new _svg.SVG()
+	    });
+	    html.render();
+	    return liteAdaptor.innerHTML(liteAdaptor.body(html.document));
 	}
 
 	exports.default = {
-	  md: new _markdownIt2.default(),
+	    md: new _markdownIt2.default(),
 
-	  template: '<div><slot></slot></div>',
+	    template: '<div><slot></slot></div>',
 
-	  data: function data() {
-	    return {
-	      sourceData: this.source
-	    };
-	  },
+	    data: function data() {
+	        return {
+	            sourceData: this.source
+	        };
+	    },
 
 
-	  props: {
-	    watches: {
-	      type: Array,
-	      default: function _default() {
-	        return ['source', 'show', 'toc'];
-	      }
-	    },
-	    source: {
-	      type: String,
-	      default: ''
-	    },
-	    show: {
-	      type: Boolean,
-	      default: true
-	    },
-	    highlight: {
-	      type: Boolean,
-	      default: true
-	    },
-	    html: {
-	      type: Boolean,
-	      default: true
-	    },
-	    xhtmlOut: {
-	      type: Boolean,
-	      default: true
-	    },
-	    breaks: {
-	      type: Boolean,
-	      default: true
-	    },
-	    linkify: {
-	      type: Boolean,
-	      default: true
-	    },
-	    emoji: {
-	      type: Boolean,
-	      default: true
-	    },
-	    typographer: {
-	      type: Boolean,
-	      default: true
-	    },
-	    langPrefix: {
-	      type: String,
-	      default: 'language-'
-	    },
-	    quotes: {
-	      type: String,
-	      default: '“”‘’'
-	    },
-	    tableClass: {
-	      type: String,
-	      default: 'table'
-	    },
-	    taskLists: {
-	      type: Boolean,
-	      default: true
-	    },
-	    toc: {
-	      type: Boolean,
-	      default: false
-	    },
-	    tocId: {
-	      type: String
-	    },
-	    tocClass: {
-	      type: String,
-	      default: 'table-of-contents'
-	    },
-	    tocFirstLevel: {
-	      type: Number,
-	      default: 2
-	    },
-	    tocLastLevel: {
-	      type: Number
-	    },
-	    tocAnchorLink: {
-	      type: Boolean,
-	      default: true
-	    },
-	    tocAnchorClass: {
-	      type: String,
-	      default: 'toc-anchor'
-	    },
-	    tocAnchorLinkSymbol: {
-	      type: String,
-	      default: '#'
-	    },
-	    tocAnchorLinkSpace: {
-	      type: Boolean,
-	      default: true
-	    },
-	    tocAnchorLinkClass: {
-	      type: String,
-	      default: 'toc-anchor-link'
-	    },
-	    anchorAttributes: {
-	      type: Object,
-	      default: function _default() {
-	        return {};
-	      }
-	    },
-	    prerender: {
-	      type: Function,
-	      default: function _default(sourceData) {
-	        return sourceData;
-	      }
-	    },
-	    postrender: {
-	      type: Function,
-	      default: function _default(htmlData) {
-	        return htmlData;
-	      }
-	    },
-	    addtionMarkdownModules: {
-	      type: Array,
-	      default: []
-	    }
-	  },
-
-	  computed: {
-	    tocLastLevelComputed: function tocLastLevelComputed() {
-	      return this.tocLastLevel > this.tocFirstLevel ? this.tocLastLevel : this.tocFirstLevel + 1;
-	    }
-	  },
-
-	  render: function render(createElement) {
-	    var _this = this;
-
-	    this.md = new _markdownIt2.default().use(_markdownItSub2.default).use(_markdownItSup2.default).use(_markdownItFootnote2.default).use(_markdownItDeflist2.default).use(_markdownItAbbr2.default).use(_markdownItIns2.default).use(_markdownItMark2.default).use(_markdownItTaskLists2.default, { enabled: this.taskLists }).use(_markdownItMathjax2.default);
-
-	    for (i in this.addtionMarkdownModules) {
-	      this.md = this.md.use(i.module, i.options);
-	    }
-
-	    if (this.emoji) {
-	      this.md.use(_markdownItEmoji2.default);
-	    }
-
-	    this.md.set({
-	      html: this.html,
-	      xhtmlOut: this.xhtmlOut,
-	      breaks: this.breaks,
-	      linkify: this.linkify,
-	      typographer: this.typographer,
-	      langPrefix: this.langPrefix,
-	      quotes: this.quotes
-	    });
-	    this.md.renderer.rules.table_open = function () {
-	      return '<table class="' + _this.tableClass + '">\n';
-	    };
-	    var defaultLinkRenderer = this.md.renderer.rules.link_open || function (tokens, idx, options, env, self) {
-	      return self.renderToken(tokens, idx, options);
-	    };
-	    this.md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
-	      (0, _keys2.default)(_this.anchorAttributes).map(function (attribute) {
-	        var aIndex = tokens[idx].attrIndex(attribute);
-	        var value = _this.anchorAttributes[attribute];
-	        if (aIndex < 0) {
-	          tokens[idx].attrPush([attribute, value]); // add new attribute
-	        } else {
-	          tokens[idx].attrs[aIndex][1] = value;
-	        }
-	      });
-	      return defaultLinkRenderer(tokens, idx, options, env, self);
-	    };
-
-	    if (this.toc) {
-	      this.md.use(_markdownItTocAndAnchor2.default, {
-	        tocClassName: this.tocClass,
-	        tocFirstLevel: this.tocFirstLevel,
-	        tocLastLevel: this.tocLastLevelComputed,
-	        anchorLink: this.tocAnchorLink,
-	        anchorLinkSymbol: this.tocAnchorLinkSymbol,
-	        anchorLinkSpace: this.tocAnchorLinkSpace,
-	        anchorClassName: this.tocAnchorClass,
-	        anchorLinkSymbolClassName: this.tocAnchorLinkClass,
-	        tocCallback: function tocCallback(tocMarkdown, tocArray, tocHtml) {
-	          if (tocHtml) {
-	            if (_this.tocId && document.getElementById(_this.tocId)) {
-	              document.getElementById(_this.tocId).innerHTML = tocHtml;
+	    props: {
+	        watches: {
+	            type: Array,
+	            default: function _default() {
+	                return ['source', 'show', 'toc'];
 	            }
-
-	            _this.$emit('toc-rendered', tocHtml);
-	          }
+	        },
+	        source: {
+	            type: String,
+	            default: ''
+	        },
+	        show: {
+	            type: Boolean,
+	            default: true
+	        },
+	        highlight: {
+	            type: Boolean,
+	            default: true
+	        },
+	        html: {
+	            type: Boolean,
+	            default: true
+	        },
+	        xhtmlOut: {
+	            type: Boolean,
+	            default: true
+	        },
+	        breaks: {
+	            type: Boolean,
+	            default: true
+	        },
+	        linkify: {
+	            type: Boolean,
+	            default: true
+	        },
+	        emoji: {
+	            type: Boolean,
+	            default: true
+	        },
+	        typographer: {
+	            type: Boolean,
+	            default: true
+	        },
+	        langPrefix: {
+	            type: String,
+	            default: 'language-'
+	        },
+	        quotes: {
+	            type: String,
+	            default: '“”‘’'
+	        },
+	        tableClass: {
+	            type: String,
+	            default: 'table'
+	        },
+	        taskLists: {
+	            type: Boolean,
+	            default: true
+	        },
+	        toc: {
+	            type: Boolean,
+	            default: false
+	        },
+	        tocId: {
+	            type: String
+	        },
+	        tocClass: {
+	            type: String,
+	            default: 'table-of-contents'
+	        },
+	        tocFirstLevel: {
+	            type: Number,
+	            default: 2
+	        },
+	        tocLastLevel: {
+	            type: Number
+	        },
+	        tocAnchorLink: {
+	            type: Boolean,
+	            default: true
+	        },
+	        tocAnchorClass: {
+	            type: String,
+	            default: 'toc-anchor'
+	        },
+	        tocAnchorLinkSymbol: {
+	            type: String,
+	            default: '#'
+	        },
+	        tocAnchorLinkSpace: {
+	            type: Boolean,
+	            default: true
+	        },
+	        tocAnchorLinkClass: {
+	            type: String,
+	            default: 'toc-anchor-link'
+	        },
+	        anchorAttributes: {
+	            type: Object,
+	            default: function _default() {
+	                return {};
+	            }
+	        },
+	        prerender: {
+	            type: Function,
+	            default: function _default(sourceData) {
+	                return sourceData;
+	            }
+	        },
+	        postrender: {
+	            type: Function,
+	            default: function _default(htmlData) {
+	                return htmlData;
+	            }
+	        },
+	        addtionMarkdownModules: {
+	            type: Array,
+	            default: []
 	        }
-	      });
+	    },
+
+	    computed: {
+	        tocLastLevelComputed: function tocLastLevelComputed() {
+	            return this.tocLastLevel > this.tocFirstLevel ? this.tocLastLevel : this.tocFirstLevel + 1;
+	        }
+	    },
+
+	    render: function render(createElement) {
+	        var _this = this;
+
+	        this.md = new _markdownIt2.default().use(_markdownItSub2.default).use(_markdownItSup2.default).use(_markdownItFootnote2.default).use(_markdownItDeflist2.default).use(_markdownItAbbr2.default).use(_markdownItIns2.default).use(_markdownItMark2.default).use(_markdownItTaskLists2.default, { enabled: this.taskLists }).use(__webpack_require__(20)());
+
+	        for (i in this.addtionMarkdownModules) {
+	            this.md = this.md.use(i.module, i.options);
+	        }
+
+	        if (this.emoji) {
+	            this.md.use(_markdownItEmoji2.default);
+	        }
+
+	        this.md.set({
+	            html: this.html,
+	            xhtmlOut: this.xhtmlOut,
+	            breaks: this.breaks,
+	            linkify: this.linkify,
+	            typographer: this.typographer,
+	            langPrefix: this.langPrefix,
+	            quotes: this.quotes
+	        });
+	        this.md.renderer.rules.table_open = function () {
+	            return '<table class="' + _this.tableClass + '">\n';
+	        };
+	        var defaultLinkRenderer = this.md.renderer.rules.link_open || function (tokens, idx, options, env, self) {
+	            return self.renderToken(tokens, idx, options);
+	        };
+	        this.md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+	            (0, _keys2.default)(_this.anchorAttributes).map(function (attribute) {
+	                var aIndex = tokens[idx].attrIndex(attribute);
+	                var value = _this.anchorAttributes[attribute];
+	                if (aIndex < 0) {
+	                    tokens[idx].attrPush([attribute, value]); // add new attribute
+	                } else {
+	                    tokens[idx].attrs[aIndex][1] = value;
+	                }
+	            });
+	            return defaultLinkRenderer(tokens, idx, options, env, self);
+	        };
+
+	        if (this.toc) {
+	            this.md.use(_markdownItTocAndAnchor2.default, {
+	                tocClassName: this.tocClass,
+	                tocFirstLevel: this.tocFirstLevel,
+	                tocLastLevel: this.tocLastLevelComputed,
+	                anchorLink: this.tocAnchorLink,
+	                anchorLinkSymbol: this.tocAnchorLinkSymbol,
+	                anchorLinkSpace: this.tocAnchorLinkSpace,
+	                anchorClassName: this.tocAnchorClass,
+	                anchorLinkSymbolClassName: this.tocAnchorLinkClass,
+	                tocCallback: function tocCallback(tocMarkdown, tocArray, tocHtml) {
+	                    if (tocHtml) {
+	                        if (_this.tocId && document.getElementById(_this.tocId)) {
+	                            document.getElementById(_this.tocId).innerHTML = tocHtml;
+	                        }
+
+	                        _this.$emit('toc-rendered', tocHtml);
+	                    }
+	                }
+	            });
+	        }
+
+	        var outHtml = this.show ? this.md.render(this.prerender(this.sourceData)) : '';
+	        outHtml = renderMathjax(outHtml);
+	        outHtml = this.postrender(outHtml);
+
+	        this.$emit('rendered', outHtml);
+	        return createElement('div', {
+	            domProps: {
+	                innerHTML: outHtml
+	            }
+	        });
+	    },
+	    beforeMount: function beforeMount() {
+	        var _this2 = this;
+
+	        if (this.$slots.default) {
+	            this.sourceData = '';
+	            var _iteratorNormalCompletion = true;
+	            var _didIteratorError = false;
+	            var _iteratorError = undefined;
+
+	            try {
+	                for (var _iterator = (0, _getIterator3.default)(this.$slots.default), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	                    var slot = _step.value;
+
+	                    this.sourceData += slot.text;
+	                }
+	            } catch (err) {
+	                _didIteratorError = true;
+	                _iteratorError = err;
+	            } finally {
+	                try {
+	                    if (!_iteratorNormalCompletion && _iterator.return) {
+	                        _iterator.return();
+	                    }
+	                } finally {
+	                    if (_didIteratorError) {
+	                        throw _iteratorError;
+	                    }
+	                }
+	            }
+	        }
+
+	        this.$watch('source', function () {
+	            _this2.sourceData = _this2.prerender(_this2.source);
+	            _this2.$forceUpdate();
+	        });
+
+	        this.watches.forEach(function (v) {
+	            _this2.$watch(v, function () {
+	                _this2.$forceUpdate();
+	            });
+	        });
 	    }
-
-	    var outHtml = this.show ? this.md.render(this.prerender(this.sourceData)) : '';
-	    outHtml = renderMathjax(outHtml);
-	    outHtml = this.postrender(outHtml);
-
-	    this.$emit('rendered', outHtml);
-	    return createElement('div', {
-	      domProps: {
-	        innerHTML: outHtml
-	      }
-	    });
-	  },
-	  beforeMount: function beforeMount() {
-	    var _this2 = this;
-
-	    if (this.$slots.default) {
-	      this.sourceData = '';
-	      var _iteratorNormalCompletion = true;
-	      var _didIteratorError = false;
-	      var _iteratorError = undefined;
-
-	      try {
-	        for (var _iterator = (0, _getIterator3.default)(this.$slots.default), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-	          var slot = _step.value;
-
-	          this.sourceData += slot.text;
-	        }
-	      } catch (err) {
-	        _didIteratorError = true;
-	        _iteratorError = err;
-	      } finally {
-	        try {
-	          if (!_iteratorNormalCompletion && _iterator.return) {
-	            _iterator.return();
-	          }
-	        } finally {
-	          if (_didIteratorError) {
-	            throw _iteratorError;
-	          }
-	        }
-	      }
-	    }
-
-	    this.$watch('source', function () {
-	      _this2.sourceData = _this2.prerender(_this2.source);
-	      _this2.$forceUpdate();
-	    });
-
-	    this.watches.forEach(function (v) {
-	      _this2.$watch(v, function () {
-	        _this2.$forceUpdate();
-	      });
-	    });
-	  }
 	};
 
 /***/ }),
