@@ -163,7 +163,7 @@ export default {
     },
     addtionMarkdownModules: {
       type: Array,
-      default: [],
+      default: () => ([]),
     },
   },
 
